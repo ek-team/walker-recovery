@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg">
+    <include
+        android:id="@+id/layout_training_title"
+        layout="@layout/layout_training_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_root_v1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_training_title"
+        android:visibility="visible">
+
+        <com.pharos.walker.customview.WaveLoadingView
+            android:id="@+id/waveLoadingView"
+            android:layout_width="@dimen/dp_550"
+            android:layout_height="@dimen/dp_550"
+            android:layout_centerInParent="true"
+            app:wlv_round_rectangle="true"
+            app:wlv_progressValue="25"
+            app:wlv_shapeType="circle"
+            app:wlv_triangle_direction="north"
+            app:wlv_waveAmplitude="30"
+            app:wlv_waveColor="#e3792a"
+            app:wlv_wave_background_Color="@color/transparent" />
+
+        <com.github.anastr.speedviewlib.SpeedView
+            android:id="@+id/speedview"
+            android:layout_width="@dimen/dp_550"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:sv_centerCircleColor="#88FF6D30"
+            app:sv_endDegree="390"
+            app:sv_highSpeedColor="#FF0000"
+            app:sv_indicatorColor="#FFFFFF"
+            app:sv_lowSpeedColor="@color/speed_green"
+            app:sv_markColor="#AAFFFFFF"
+            app:sv_mediumSpeedColor="@color/speed_yellow"
+            app:sv_speedTextColor="@color/white"
+            app:sv_speedTextSize="60sp"
+            app:sv_speedometerWidth="@dimen/dp_25"
+            app:sv_startDegree="150"
+            app:sv_textColor="#AAFFFFFF"
+            app:sv_textSize="20sp"
+            app:sv_tickTextFormat="FLOAT"
+            app:sv_unit="  kg"
+            app:sv_unitTextColor="@color/white"
+            app:sv_unitTextSize="30sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/speedview">
+
+            <com.pharos.walker.customview.VerticalProgressBar
+                android:id="@+id/vp_progress"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_80"
+                android:layout_marginBottom="@dimen/dp_80"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_down"
+            android:layout_above="@id/speedview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_title_train_time"
+            android:layout_width="@dimen/dp_250"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_45"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余时间："
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_30" />
+            <TextView
+                android:id="@+id/tv_train_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_36"
+                android:text="10:00"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_time"
+            android:layout_width="@dimen/dp_250"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_100"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效次数："
+                android:textColor="@color/white_66"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_effective_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="36sp"
+                android:text="0"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="次"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="/25次"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_warning_time"
+            android:layout_width="@dimen/dp_250"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_time"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="警告次数："
+                android:textColor="@color/white_66"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_warning_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="次"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_game_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_warning_time"
+            android:layout_alignParentEnd="true"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_videogame_off" />
+
+        <ImageView
+            android:id="@+id/iv_wifi_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_warning_time"
+            android:layout_toStartOf="@+id/iv_game_dog"
+            android:padding="20dp"
+            android:src="@drawable/ic_wifi_settings"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_game_dog"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/iv_wifi_setting"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/game_dog"/>
+
+        <ImageView
+            android:id="@+id/iv_video_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_wifi_setting"
+            android:layout_alignParentEnd="true"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_videogame" />
+
+        <ImageView
+            android:id="@+id/iv_video_game_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_video_game"
+            android:layout_alignParentEnd="true"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_videogame_off" />
+
+        <TextView
+            android:id="@+id/tv_stop"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="@dimen/dp_70"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:background="@drawable/btn_orange_bg"
+            android:text="结束训练"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</RelativeLayout>

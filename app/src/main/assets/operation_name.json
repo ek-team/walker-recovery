@@ -1,0 +1,562 @@
+[
+  {
+    "areaId": "1001",
+    "areaName": "骨盆",
+    "cities": [
+      {
+        "areaId": "0101",
+        "areaName": "骨盆骨折",
+        "counties": [
+          {
+            "areaId": "1",
+            "areaName": "外固定支架"
+          },
+          {
+            "areaId": "2",
+            "areaName": "切开复位内固定术（ORIF）"
+          }
+
+        ]
+      },
+      {
+        "areaId": "0102",
+        "areaName": "髋臼骨折",
+        "counties": [
+          {
+            "areaId": "3",
+            "areaName": "切开复位内固定术（ORIF）"
+          }
+
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1002",
+    "areaName": "髋关节",
+    "cities": [
+      {
+        "areaId": "0201",
+        "areaName": "股骨头骨折",
+        "counties": [
+          {
+            "areaId": "5",
+            "areaName": "切开复位内固定术（ORIF）"
+          }
+
+        ]
+      },
+      {
+        "areaId": "0202",
+        "areaName": "髋关节发育不良",
+        "counties": [
+          {
+            "areaId": "6",
+            "areaName": "全髋关节置换术（THA）"
+          },
+          {
+            "areaId": "7",
+            "areaName": "髋臼周围截骨术"
+          }
+
+        ]
+      },
+      {
+        "areaId": "0203",
+        "areaName": "股骨头坏死",
+        "counties": [
+          {
+            "areaId": "8",
+            "areaName": "全髋关节置换术（THA）"
+          },
+          {
+            "areaId": "9",
+            "areaName": "髓芯减压术"
+          },
+          {
+            "areaId": "10",
+            "areaName": "带血管游离腓骨移植术"
+          },
+          {
+            "areaId": "11",
+            "areaName": "带血管蒂髂骨移植术"
+          },
+          {
+            "areaId": "12",
+            "areaName": "病灶清除松质骨植骨术"
+          }
+        ]
+      },
+      {
+        "areaId": "0204",
+        "areaName": "髋关节撞击征",
+        "counties": [
+          {
+            "areaId": "13",
+            "areaName": "髋关节镜下修复术"
+          }
+
+        ]
+      },
+      {
+        "areaId": "0205",
+        "areaName": "髋关节软骨损伤",
+        "counties": [
+          {
+            "areaId": "14",
+            "areaName": "髋关节镜下微骨折术"
+          },
+          {
+            "areaId": "15",
+            "areaName": "肋软骨移植术"
+          }
+
+        ]
+      },
+      {
+        "areaId": "0206",
+        "areaName": "假体功能异常",
+        "counties": [
+          {
+            "areaId": "16",
+            "areaName": "髋关节置换术后假体翻修术"
+          }
+
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1003",
+    "areaName": "股骨近端",
+    "cities": [
+      {
+        "areaId": "0301",
+        "areaName": "股骨颈骨折",
+        "counties": [
+          {
+            "areaId": "17",
+            "areaName": "空心钉内固定术"
+          },
+          {
+            "areaId": "18",
+            "areaName": "FNS内固定术"
+          },
+          {
+            "areaId": "19",
+            "areaName": "全髋关节置换术（THA）"
+          },
+          {
+            "areaId": "20",
+            "areaName": "半髋关节置换术"
+          }
+        ]
+
+      },
+      {
+        "areaId": "0302",
+        "areaName": "股骨转子间骨折",
+        "counties": [
+          {
+            "areaId": "21",
+            "areaName": "髓内钉内固定术"
+          },
+          {
+            "areaId": "22",
+            "areaName": "钢板内固定术"
+          }
+
+        ]
+      },
+      {
+        "areaId": "0303",
+        "areaName": "股骨近端畸形",
+        "counties": [
+          {
+            "areaId": "23",
+            "areaName": "股骨近端截骨钢板内固定术"
+          },
+          {
+            "areaId": "24",
+            "areaName": "股骨近端截骨髓内钉内固定术"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1004",
+    "areaName": "股骨干",
+    "cities": [
+      {
+        "areaId": "0401",
+        "areaName": "股骨干骨折",
+        "counties": [
+          {
+            "areaId": "25",
+            "areaName": "切开复位钢板内固定术（ORIF）"
+          },
+          {
+            "areaId": "26",
+            "areaName": "切开复位髓内钉内固定术（ORIF）"
+          }
+        ]
+
+      },
+      {
+        "areaId": "0402",
+        "areaName": "股骨干骨折后骨不连",
+        "counties": [
+          {
+            "areaId": "27",
+            "areaName": "股骨干骨不连动力化术"
+          },
+          {
+            "areaId": "28",
+            "areaName": "股骨干骨不连翻修钢板内固定术"
+          },
+          {
+            "areaId": "29",
+            "areaName": "切开复位髓内钉内固定术（ORIF）"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1005",
+    "areaName": "股骨远端",
+    "cities": [
+      {
+        "areaId": "0501",
+        "areaName": "股骨远端骨折",
+        "counties": [
+          {
+            "areaId": "30",
+            "areaName": "切开复位钢板内固定术（ORIF）"
+          },
+          {
+            "areaId": "31",
+            "areaName": "切开复位髓内钉内固定术"
+          }
+        ]
+      },
+      {
+        "areaId": "0502",
+        "areaName": "股骨远端畸形",
+        "counties": [
+          {
+            "areaId": "32",
+            "areaName": "截骨矫形钢板内固定术（ORIF）"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1006",
+    "areaName": "膝关节",
+    "cities": [
+      {
+        "areaId": "0601",
+        "areaName": "髌骨骨折",
+        "counties": [
+          {
+            "areaId": "33",
+            "areaName": "髌骨骨折切开复位张力带内固定术"
+          }
+        ]
+      },
+      {
+        "areaId": "0602",
+        "areaName": "韧带损伤",
+        "counties": [
+          {
+            "areaId": "34",
+            "areaName": "膝关节韧带损伤修复与重建术"
+          }
+        ]
+      },
+      {
+        "areaId": "0603",
+        "areaName": "半月板损伤",
+        "counties": [
+          {
+            "areaId": "35",
+            "areaName": "膝关节镜下半月板修整/成形术"
+          }
+        ]
+      },
+      {
+        "areaId": "0604",
+        "areaName": "膝关节软骨病损",
+        "counties": [
+          {
+            "areaId": "36",
+            "areaName": "关节镜下膝关节软骨微骨折术"
+          },
+          {
+            "areaId": "37",
+            "areaName": "软骨损伤移植/修复术"
+          }
+        ]
+      },
+      {
+        "areaId": "0605",
+        "areaName": "膝关节发育性疾病",
+        "counties": [
+          {
+            "areaId": "38",
+            "areaName": "胫骨结节移位术"
+          }
+        ]
+      },
+      {
+        "areaId": "0606",
+        "areaName": "膝关节骨性关节炎",
+        "counties": [
+          {
+            "areaId": "39",
+            "areaName": "全膝关节置换术（TKA）"
+          },
+          {
+            "areaId": "40",
+            "areaName": "膝关节单髁置换术"
+          },
+          {
+            "areaId": "41",
+            "areaName": "膝关节融合术"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1007",
+    "areaName": "胫骨近端",
+    "cities": [
+      {
+        "areaId": "0701",
+        "areaName": "胫骨平台骨折",
+        "counties": [
+          {
+            "areaId": "42",
+            "areaName": "切开复位钢板内固定术（ORIF）"
+          },
+          {
+            "areaId": "43",
+            "areaName": "外固定支架固定术"
+          }
+        ]
+      },
+      {
+        "areaId": "0702",
+        "areaName": "胫骨近端畸形",
+        "counties": [
+          {
+            "areaId": "44",
+            "areaName": "截骨矫形钢板内固定术（ORIF）"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1008",
+    "areaName": "胫骨中段",
+    "cities": [
+      {
+        "areaId": "0801",
+        "areaName": "胫骨中段骨折",
+        "counties": [
+          {
+            "areaId": "45",
+            "areaName": "切开复位钢板内固定术（ORIF）"
+          },
+          {
+            "areaId": "46",
+            "areaName": "切开复位髓内钉固定术"
+          }
+        ]
+      },
+      {
+        "areaId": "0802",
+        "areaName": "胫骨中段骨折骨不连",
+        "counties": [
+          {
+            "areaId": "47",
+            "areaName": "骨不连翻修钢板内固定术（ORIF）"
+          },
+          {
+            "areaId": "48",
+            "areaName": "外固定支架术"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1009",
+    "areaName": "胫腓骨远端",
+    "cities": [
+      {
+        "areaId": "0901",
+        "areaName": "稳定性踝关节骨折",
+        "counties": [
+          {
+            "areaId": "49",
+            "areaName": "踝关节骨折钢板螺钉内固定术"
+          }
+        ]
+      },
+      {
+        "areaId": "0902",
+        "areaName": "不稳定性踝关节骨折（Pilon）",
+        "counties": [
+          {
+            "areaId": "50",
+            "areaName": "钢板螺钉内固定术"
+          }
+        ]
+      },
+      {
+        "areaId": "0903",
+        "areaName": "踝关节扭伤",
+        "counties": [
+          {
+            "areaId": "51",
+            "areaName": "踝部韧带急性损伤修复与重建术"
+          }
+        ]
+      },
+      {
+        "areaId": "0904",
+        "areaName": "踝关节退行性疾病",
+        "counties": [
+          {
+            "areaId": "52",
+            "areaName": "踝关节融合术"
+          }
+        ]
+      },
+      {
+        "areaId": "0905",
+        "areaName": "跟腱断裂",
+        "counties": [
+          {
+            "areaId": "53",
+            "areaName": "肌腱断裂修复术"
+          }
+        ]
+      },
+      {
+        "areaId": "0906",
+        "areaName": "踝关节骨软骨损伤",
+        "counties": [
+          {
+            "areaId": "54",
+            "areaName": "关节镜下膝关节软骨微骨折术"
+          },
+          {
+            "areaId": "55",
+            "areaName": "软骨损伤移植/修复术"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1011",
+    "areaName": "足",
+    "cities": [
+      {
+        "areaId": "1101",
+        "areaName": "跟骨骨折",
+        "counties": [
+          {
+            "areaId": "56",
+            "areaName": "切开复位钢板内固定术（ORIF）"
+          },
+          {
+            "areaId": "57",
+            "areaName": "微创螺钉固定术"
+          }
+        ]
+      },
+      {
+        "areaId": "1102",
+        "areaName": "距骨骨折",
+        "counties": [
+          {
+            "areaId": "58",
+            "areaName": "切开复位钢板内固定术（ORIF）"
+          },
+          {
+            "areaId": "59",
+            "areaName": "微创螺钉固定术"
+          }
+        ]
+      },
+      {
+        "areaId": "1103",
+        "areaName": "跖骨骨折",
+        "counties": [
+          {
+            "areaId": "60",
+            "areaName": "切开复位钢板内固定术（ORIF）"
+          },
+          {
+            "areaId": "61",
+            "areaName": "切开复位克氏针内固定术（ORIF）"
+          }
+        ]
+      },
+      {
+        "areaId": "1104",
+        "areaName": "Lisfranc损伤",
+        "counties": [
+          {
+            "areaId": "62",
+            "areaName": "切开复位钢板内固定术（ORIF）"
+          },
+          {
+            "areaId": "63",
+            "areaName": "克氏针内固定术"
+          }
+        ]
+      },
+      {
+        "areaId": "1105",
+        "areaName": "足退行性变",
+        "counties": [
+          {
+            "areaId": "64",
+            "areaName": "关节融合术"
+          }
+        ]
+      },
+      {
+        "areaId": "1106",
+        "areaName": "足部畸形",
+        "counties": [
+          {
+            "areaId": "65",
+            "areaName": "扁平足矫正钢板内固定术"
+          },
+          {
+            "areaId": "66",
+            "areaName": "踇内、外翻矫正钢板内固定术"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "1012",
+    "areaName": "其他",
+    "cities": [
+
+        ]
+
+  }
+]

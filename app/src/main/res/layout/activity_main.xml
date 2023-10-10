@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/ic_bg">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_48" />
+    <RelativeLayout
+        android:id="@+id/re_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title"
+        android:visibility="visible">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_331">
+            <View
+                android:layout_width="8dp"
+                android:layout_height="124dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_58"
+                tools:text="06:32"
+                android:textColor="@color/white"
+                android:textSize="64sp" />
+
+            <TextView
+                android:id="@+id/tv_am_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_18"
+                android:layout_marginTop="@dimen/dp_43"
+                android:layout_toEndOf="@id/tv_time"
+                tools:text="PM"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_time"
+                android:layout_marginStart="@dimen/dp_58"
+                tools:text="2019/03/24"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp_58"
+            android:layout_marginBottom="@dimen/dp_56">
+
+            <ImageView
+                android:id="@+id/iv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_video" />
+
+            <TextView
+                android:id="@+id/tv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginTop="4dip"
+                android:layout_toEndOf="@id/iv_video"
+                android:text="使用帮助？"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_help"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@id/iv_video"
+                android:text="Watch Our Trainer"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp_477"
+            android:layout_marginBottom="61dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_home_bg" />
+
+            <ImageView
+                android:id="@+id/iv_training"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_104"
+                android:src="@drawable/ic_training" />
+
+            <TextView
+                android:id="@+id/iv_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_312"
+                android:drawableStart="@drawable/ic_plan"
+                android:drawableBottom="@drawable/ic_line"
+                android:gravity="center"
+                android:text="  计划与记录"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/iv_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_431"
+                android:layout_marginTop="@dimen/dp_97"
+                android:drawableStart="@drawable/ic_doctor"
+                android:drawableBottom="@drawable/ic_line"
+                android:gravity="center"
+                android:text="  我的医生"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/iv_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_505"
+                android:layout_marginTop="@dimen/dp_223"
+                android:drawableStart="@drawable/ic_news"
+                android:drawableBottom="@drawable/ic_line"
+                android:gravity="center"
+                android:text="  咨询"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/iv_user_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_431"
+                android:layout_marginTop="@dimen/dp_356"
+                android:drawableStart="@drawable/ic_user_center"
+                android:drawableBottom="@drawable/ic_line"
+                android:gravity="center"
+                android:text="  用户中心"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_312"
+                android:layout_marginTop="@dimen/dp_458"
+                android:drawableStart="@drawable/ic_setting"
+                android:drawableBottom="@drawable/ic_line"
+                android:gravity="center"
+                android:text="  设置"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_sample"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_600"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp">
+            <View
+                android:layout_width="8dp"
+                android:layout_height="124dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                tools:text="06:32"
+                android:textColor="@color/white"
+                android:textSize="64sp" />
+
+            <TextView
+                android:id="@+id/tv_am_pm_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="43dp"
+                android:layout_toRightOf="@id/tv_time_1"
+                tools:text="PM"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_date_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_time_1"
+                android:layout_marginLeft="58dp"
+                tools:text="2019/03/24"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_help_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="58dp"
+            android:layout_marginBottom="56dp">
+
+            <ImageView
+                android:id="@+id/iv_video_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_video" />
+
+            <TextView
+                android:id="@+id/tv_help_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dip"
+                android:layout_toRightOf="@id/iv_video_1"
+                android:text="使用帮助？"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_help_1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/iv_video_1"
+                android:text="Watch Our Trainer"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_training_1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="600dp"
+            android:src="@drawable/ic_training"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/iv_training_1"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_more_function"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/icon_more_function"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_more_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange66_bg"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="60dp"
+                android:text="查看"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

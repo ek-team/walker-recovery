@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_training_title"
+        layout="@layout/layout_training_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp" />
+    <ImageView
+        android:layout_width="@dimen/dp_400"
+        android:layout_height="@dimen/dp_400"
+        android:src="@mipmap/pic_evaluate_dashboard"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="30sp"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_evaluate_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评估说明"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="："
+                    android:textColor="@color/white_88"
+                    android:textSize="@dimen/sp_24" />
+
+                <TextView
+                    android:id="@+id/tv_evaluate_caption_content"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="60dp"
+                    android:text="您即将进行踩踏评估，为了保证安全，在您感觉到一点点（轻微）疼的时候就要停下来哦！\每次踩踏结束松开脚等待指针回零再开始下次踩踏"
+                    android:textColor="@color/white_88"
+                    android:textSize="@dimen/sp_24" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/dp_100"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_pain_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="疼痛说明"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="："
+                    android:textColor="@color/white_88"
+                    android:textSize="@dimen/sp_24" />
+
+                <TextView
+                    android:id="@+id/tv_pain_caption_content"
+                    android:layout_width="@dimen/dp_400"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_60"
+                    android:text="比如您能承受最大疼痛值是10，感到1分疼痛就可以停止踩踏。"
+                    android:textColor="@color/white_88"
+                    android:textSize="@dimen/sp_24" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_orange_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="10dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+</LinearLayout>
